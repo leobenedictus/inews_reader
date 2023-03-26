@@ -5,10 +5,7 @@ from bs4 import BeautifulSoup
 import streamlit as st
 
 
-url = st.text_input("Paste your inews url here please")
-
-while ".co.uk" not in url:
-     continue
+url = st.text_input("Paste your inews url here please", "inews url")
 
 response = requests.get(url)
 webpage = response.content
