@@ -7,6 +7,9 @@ import streamlit as st
 
 url = st.text_input("Paste your inews url here please")
 
+while ".com" not in url:
+     continue
+
 response = requests.get(url)
 webpage = response.content
 soup = BeautifulSoup(webpage, "html.parser")
