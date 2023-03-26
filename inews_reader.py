@@ -7,7 +7,7 @@ import streamlit as st
 
 url = st.text_input("Paste your inews url here please", "inews url")
 
-print(url)
+st.write(url)
 
 response = requests.get(url)
 webpage = response.content
