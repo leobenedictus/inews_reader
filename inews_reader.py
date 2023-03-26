@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import streamlit as st
 
 
-url = st.text_input("Paste your inews url here please", "https://inews.co.uk/")
+url = st.text_input("Paste your inews url in the box. Article will appear in the space below.", "https://inews.co.uk/")
 
 # st.write(url)
 
